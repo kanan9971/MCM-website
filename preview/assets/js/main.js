@@ -94,5 +94,83 @@
     initStickyHeader();
     initMobileNav();
     initContactForm();
+    initHeroCarousel();
   });
+
+  /* ── Hero Carousel ── */
+  function initHeroCarousel() {
+    var carousel = document.querySelector('.carousel');
+    if (!carousel) return;
+
+    var track = carousel.querySelector('.carousel-track');
+    var slides = Array.prototype.slice.call(track.querySelectorAll('.carousel-slide'));
+    // prev/next buttons removed from DOM
+    var dotsWrap = carousel.querySelector('.carousel-dots');
+    var current = 0;
+    var autoplayInterval = 2500;
+    var timer = null;
+    var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    slides.forEach(function (s, i) {
+      var btn = document.createElement('button');
+      btn.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+      btn.dataset.index = i;
+      btn.type = 'button';
+      btn.addEventListener('click', function () { goTo(i); resetTimer(); });
+      dotsWrap.appendChild(btn);
+    });
+
+    var dots = Array.prototype.slice.call(dotsWrap.querySelectorAll('button'));
+
+    function update() {
+      // update aria and dot state
+      slides.forEach(function (s, i) {
+        s.setAttribute('aria-hidden', i === current ? 'false' : 'true');
+      });
+      dots.forEach(function (d, i) { d.classList.toggle('active', i === current); });
+      // move track
+      if (track) track.style.transform = 'translateX(-' + (current * 100) + '%)';
+    }
+
+    function goTo(index) {
+      current = (index + slides.length) % slides.length;
+      update();
+    }
+
+    function next() { goTo(current + 1); }
+    function prev() { goTo(current - 1); }
+
+    // navigation buttons removed; keep dot and swipe interactions
+
+    // touch / pointer swipe
+    var startX = null;
+    carousel.addEventListener('pointerdown', function (e) {
+      startX = e.clientX;
+      try { carousel.setPointerCapture(e.pointerId); } catch (err) {}
+    });
+    carousel.addEventListener('pointerup', function (e) {
+      if (startX === null) return;
+      var dx = e.clientX - startX;
+      if (Math.abs(dx) > 40) {
+        if (dx < 0) next(); else prev();
+        resetTimer();
+      }
+      startX = null;
+    });
+
+    function startTimer() {
+      if (reduced) return;
+      stopTimer();
+      timer = setInterval(next, autoplayInterval);
+    }
+    function stopTimer() { if (timer) { clearInterval(timer); timer = null; } }
+    function resetTimer() { stopTimer(); startTimer(); }
+
+    carousel.addEventListener('mouseenter', function () { stopTimer(); });
+    carousel.addEventListener('mouseleave', function () { startTimer(); });
+
+    // init
+    goTo(0);
+    startTimer();
+  }
 })();
