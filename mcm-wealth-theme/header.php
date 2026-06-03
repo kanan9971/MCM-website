@@ -14,7 +14,7 @@
 
             <!-- Logo -->
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="site-logo" aria-label="<?php bloginfo( 'name' ); ?> – Home">
-                <span class="logo-bar" aria-hidden="true"></span>
+                <img class="logo-mark" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/logo_icon.jpg' ); ?>" alt="" aria-hidden="true">
                 <span class="logo-text">
                     <span class="logo-name">MCM Wealth</span>
                     <span class="logo-sub">Management Limited</span>
