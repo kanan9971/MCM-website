@@ -24,12 +24,12 @@
       </a>
       <nav class="header-nav" role="navigation" aria-label="Primary Navigation" id="primary-navigation">
         <ul id="primary-menu" class="nav-menu" role="menubar">
-          <li class="current-menu-item"><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="promotions.html">Promotions</a></li>
-          <li><a href="contact.html" class="btn btn-nav">Contact</a></li>
-          <li><button type="button" class="lang-switch" aria-label="Translate this page" onclick="alert('Language selection coming soon.')"><span class="lang-option is-active">EN</span><span class="lang-option">中</span></button></li>
+          <li class="current-menu-item"><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+          <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+          <li><a href="promotions.html" data-i18n="nav.promotions">Promotions</a></li>
+          <li><a href="contact.html" class="btn btn-nav" data-i18n="nav.contact">Contact</a></li>
+          <li><button type="button" class="lang-switch" aria-label="切換語言 / Switch language"><span class="lang-option is-active" onclick="switchLang('en')">EN</span><span class="lang-option" onclick="switchLang('zh')">中</span></button></li>
         </ul>
       </nav>
       <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,12 +44,12 @@
   <div class="container">
     <div class="hero-home-inner">
       <div class="hero-home-content">
-        <span class="eyebrow reveal">Hong Kong Single Family Office</span>
-        <h1 class="reveal reveal-delay-1">Wealth Lineage,<br><em class="accent-gold">Our Legacy.</em></h1>
-        <p class="reveal reveal-delay-2">MCM is a single family office focused on long-term capital allocation and strategic investments — including private equity, hedge funds, and other alternative assets. We work with external advisors across the fields we invest in.</p>
+        <span class="eyebrow reveal" data-i18n="home.hero.eyebrow">Hong Kong Single Family Office</span>
+        <h1 class="reveal reveal-delay-1" data-i18n="home.hero.h1">Wealth Lineage,<br><em class="accent-gold">Our Legacy.</em></h1>
+        <p class="reveal reveal-delay-2" data-i18n="home.hero.p">MCM is a single family office focused on long-term capital allocation and strategic investments — including private equity, hedge funds, and other alternative assets. We work with external advisors across the fields we invest in.</p>
         <div class="btn-group reveal reveal-delay-3">
-          <a href="contact.html" class="btn btn-primary">Speak with our team</a>
-          <a href="about.html" class="btn btn-ghost-dark">Learn our philosophy</a>
+          <a href="contact.html" class="btn btn-primary" data-i18n="home.hero.cta1">Speak with our team</a>
+          <a href="about.html" class="btn btn-ghost-dark" data-i18n="home.hero.cta2">Learn our philosophy</a>
         </div>
       </div>
       <div class="hero-visual-card reveal reveal-delay-2">
@@ -57,16 +57,16 @@
 
         <div class="hero-info-strip">
           <div class="hero-info-item">
-            <span class="value">Est.<br>2026</span>
-            <span class="label">Founded</span>
+            <span class="value" data-i18n="home.hero.info.est">Est.<br>2026</span>
+            <span class="label" data-i18n="home.hero.info.founded">Founded</span>
           </div>
           <div class="hero-info-item">
-            <span class="value">HK</span>
-            <span class="label">Single Family Office</span>
+            <span class="value" data-i18n="home.hero.info.hk">HK</span>
+            <span class="label" data-i18n="home.hero.info.sfo">Single Family Office</span>
           </div>
           <div class="hero-info-item">
-            <span class="value" style="font-size:12px;line-height:1.4;">Long-term Capital<br>Allocation</span>
-            <span class="label">Our Philosophy</span>
+            <span class="value" style="font-size:12px;line-height:1.4;" data-i18n="home.hero.info.alloc">Long-term Capital<br>Allocation</span>
+            <span class="label" data-i18n="home.hero.info.phil">Our Philosophy</span>
           </div>
         </div>
       </div>
@@ -78,25 +78,25 @@
 <section class="section" aria-labelledby="who-we-are-heading">
   <div class="container">
     <div class="section-intro text-center reveal">
-      <span class="eyebrow">Who Are We?</span>
-      <h2 id="who-we-are-heading">Our unique approach goes beyond transactions</h2>
-      <p>MCM is a single family office. We focus on long-term capital allocation and strategic investments — including private equity, hedge funds, and other alternative assets — working with external advisors in the fields mentioned. Rooted in integrity and trust, our values guide our family with the same strength as our wealth.</p>
+      <span class="eyebrow" data-i18n="home.who.eyebrow">Who Are We?</span>
+      <h2 id="who-we-are-heading" data-i18n="home.who.h2">Our unique approach goes beyond transactions</h2>
+      <p data-i18n="home.who.p">MCM is a single family office. We focus on long-term capital allocation and strategic investments — including private equity, hedge funds, and other alternative assets — working with external advisors in the fields mentioned. Rooted in integrity and trust, our values guide our family with the same strength as our wealth.</p>
     </div>
     <div class="cards-3col">
       <div class="value-card reveal reveal-delay-1">
         <div class="value-card-badge">1</div>
-        <h3>Family-Centric Vision</h3>
-        <p>We strengthen lineage across generations, building structures and strategies that endure beyond any single market cycle or life event.</p>
+        <h3 data-i18n="home.who.card1.h3">Family-Centric Vision</h3>
+        <p data-i18n="home.who.card1.p">We strengthen lineage across generations, building structures and strategies that endure beyond any single market cycle or life event.</p>
       </div>
       <div class="value-card reveal reveal-delay-2">
         <div class="value-card-badge">2</div>
-        <h3>Sharing Culture</h3>
-        <p>We build community with other single family offices to share knowledge. We are not intermediaries — we share, we do not provide services.</p>
+        <h3 data-i18n="home.who.card2.h3">Sharing Culture</h3>
+        <p data-i18n="home.who.card2.p">We build community with other single family offices to share knowledge. We are not intermediaries — we share, we do not provide services.</p>
       </div>
       <div class="value-card reveal reveal-delay-3">
         <div class="value-card-badge">3</div>
-        <h3>Partnership</h3>
-        <p>We partner with external specialists — legal, tax, investment — and bring them together under one framework, ensuring transparency in every decision.</p>
+        <h3 data-i18n="home.who.card3.h3">Partnership</h3>
+        <p data-i18n="home.who.card3.p">We partner with external specialists — legal, tax, investment — and bring them together under one framework, ensuring transparency in every decision.</p>
       </div>
     </div>
   </div>
@@ -106,10 +106,10 @@
 <div class="stats-band" role="region" aria-label="Key facts">
   <div class="container">
     <div class="stats-band-grid">
-      <div class="stat-item reveal"><span class="stat-value">12+</span><span class="stat-label">Years Established</span></div>
-      <div class="stat-item reveal reveal-delay-1"><span class="stat-value">HK</span><span class="stat-label">Single Family Office</span></div>
-      <div class="stat-item reveal reveal-delay-2"><span class="stat-value">100%</span><span class="stat-label">Family-Focused</span></div>
-      <div class="stat-item reveal reveal-delay-3"><span class="stat-value">&#8734;</span><span class="stat-label">Generational Vision</span></div>
+      <div class="stat-item reveal"><span class="stat-value" data-i18n="home.stats.1">12+</span><span class="stat-label" data-i18n="home.stats.1.label">Years Established</span></div>
+      <div class="stat-item reveal reveal-delay-1"><span class="stat-value" data-i18n="home.stats.2">HK</span><span class="stat-label" data-i18n="home.stats.2.label">Single Family Office</span></div>
+      <div class="stat-item reveal reveal-delay-2"><span class="stat-value" data-i18n="home.stats.3">100%</span><span class="stat-label" data-i18n="home.stats.3.label">Family-Focused</span></div>
+      <div class="stat-item reveal reveal-delay-3"><span class="stat-value" data-i18n="home.stats.4">&#8734;</span><span class="stat-label" data-i18n="home.stats.4.label">Generational Vision</span></div>
     </div>
   </div>
 </div>
@@ -119,26 +119,26 @@
   <div class="container">
     <div class="credibility-inner">
       <div class="credibility-left reveal">
-        <span class="eyebrow">Our Credibility</span>
-        <h2 id="credibility-heading">Preserving, growing, and transitioning our family's capital across generations</h2>
+        <span class="eyebrow" data-i18n="home.cred.eyebrow">Our Credibility</span>
+        <h2 id="credibility-heading" data-i18n="home.cred.h2">Preserving, growing, and transitioning our family's capital across generations</h2>
         <div class="credibility-divider"></div>
-        <p>We preserve, grow, and transition our family's capital across generations — with long-term discipline and strategic focus.</p>
+        <p data-i18n="home.cred.p">We preserve, grow, and transition our family's capital across generations — with long-term discipline and strategic focus.</p>
       </div>
       <div class="credibility-cards reveal reveal-delay-2">
         <div class="cred-card">
-          <span class="tag">Preserve</span>
-          <h3>Family-Centric Vision</h3>
-          <p>We strengthen lineage across generations, ensuring our family's wealth and identity endure together.</p>
+          <span class="tag" data-i18n="home.cred.card1.tag">Preserve</span>
+          <h3 data-i18n="home.cred.card1.h3">Family-Centric Vision</h3>
+          <p data-i18n="home.cred.card1.p">We strengthen lineage across generations, ensuring our family's wealth and identity endure together.</p>
         </div>
         <div class="cred-card">
-          <span class="tag">Share</span>
-          <h3>Sharing Culture</h3>
-          <p>We build community with other single family offices to share knowledge — we are not intermediaries, we share.</p>
+          <span class="tag" data-i18n="home.cred.card2.tag">Share</span>
+          <h3 data-i18n="home.cred.card2.h3">Sharing Culture</h3>
+          <p data-i18n="home.cred.card2.p">We build community with other single family offices to share knowledge — we are not intermediaries, we share.</p>
         </div>
         <div class="cred-card">
-          <span class="tag">Partner</span>
-          <h3>Partnership</h3>
-          <p>We partner with external specialists — legal, tax, investment — bringing them together under one coherent framework.</p>
+          <span class="tag" data-i18n="home.cred.card3.tag">Partner</span>
+          <h3 data-i18n="home.cred.card3.h3">Partnership</h3>
+          <p data-i18n="home.cred.card3.p">We partner with external specialists — legal, tax, investment — bringing them together under one coherent framework.</p>
         </div>
       </div>
     </div>
@@ -150,42 +150,42 @@
   <div class="container">
     <div class="section-header reveal">
       <div>
-        <span class="eyebrow">Investment Focus</span>
-        <h2 id="services-heading">Where we allocate our capital</h2>
+        <span class="eyebrow" data-i18n="home.services.eyebrow">Investment Focus</span>
+        <h2 id="services-heading" data-i18n="home.services.h2">Where we allocate our capital</h2>
       </div>
-      <a href="services.html" class="btn btn-ghost-pale">View investment focus</a>
+      <a href="services.html" class="btn btn-ghost-pale" data-i18n="home.services.link">View investment focus</a>
     </div>
     <div class="services-grid">
       <div class="service-card reveal reveal-delay-1">
         <span class="service-card-number">01</span>
-        <h3>Family Office Oversight</h3>
-        <p>Long-term capital allocation, strategic investments, family wealth preservation, and multi-generational planning.</p>
+        <h3 data-i18n="home.services.1.h3">Family Office Oversight</h3>
+        <p data-i18n="home.services.1.p">Long-term capital allocation, strategic investments, family wealth preservation, and multi-generational planning.</p>
       </div>
       <div class="service-card reveal reveal-delay-2">
         <span class="service-card-number">02</span>
-        <h3>Wealth Coordination</h3>
-        <p>Equities, bonds, fixed interest products, commodities, alternative investments (private equity, hedge funds), and property.</p>
+        <h3 data-i18n="home.services.2.h3">Wealth Coordination</h3>
+        <p data-i18n="home.services.2.p">Equities, bonds, fixed interest products, commodities, alternative investments (private equity, hedge funds), and property.</p>
       </div>
       <div class="service-card reveal reveal-delay-3">
         <span class="service-card-number">03</span>
-        <h3>Estate &amp; Legacy</h3>
-        <p>Estate and legacy strategies that safeguard assets, minimise risks, and ensure continuity of values across generations.</p>
+        <h3 data-i18n="home.services.3.h3">Estate & Legacy</h3>
+        <p data-i18n="home.services.3.p">Estate and legacy strategies that safeguard assets, minimise risks, and ensure continuity of values across generations.</p>
       </div>
       <div class="service-card reveal reveal-delay-1">
         <span class="service-card-number">04</span>
-        <h3>Business Succession Planning</h3>
-        <p>Succession plans that protect business value, secure continuity, and prepare the next generation for success.</p>
+        <h3 data-i18n="home.services.4.h3">Business Succession Planning</h3>
+        <p data-i18n="home.services.4.p">Succession plans that protect business value, secure continuity, and prepare the next generation for success.</p>
       </div>
       <div class="service-card reveal reveal-delay-2">
         <span class="service-card-number">05</span>
-        <h3>Tax Strategy</h3>
-        <p>Optimising our tax arrangements with external cross-border tax advisors, to reduce liabilities and enhance efficiency.</p>
+        <h3 data-i18n="home.services.5.h3">Tax Strategy</h3>
+        <p data-i18n="home.services.5.p">Optimising our tax arrangements with external cross-border tax advisors, to reduce liabilities and enhance efficiency.</p>
       </div>
       <div class="service-card service-card-bespoke reveal reveal-delay-3">
         <div class="bespoke-icon" aria-hidden="true">&#9670;</div>
-        <h3>One Family. One Conversation.</h3>
-        <p>We do not solicit external clients, but we welcome dialogue with like-minded families, advisors, and partners.</p>
-        <a href="contact.html" class="btn btn-ghost">Get in touch</a>
+        <h3 data-i18n="home.services.6.h3">One Family. One Conversation.</h3>
+        <p data-i18n="home.services.6.p">We do not solicit external clients, but we welcome dialogue with like-minded families, advisors, and partners.</p>
+        <a href="contact.html" class="btn btn-ghost" data-i18n="home.services.6.btn">Get in touch</a>
       </div>
     </div>
   </div>
@@ -201,12 +201,12 @@
     <circle cx="350" cy="350" r="340" stroke="#EAD9C8" stroke-width="0.5" stroke-dasharray="4 6"/>
   </svg>
   <div class="cta-band-content reveal">
-    <span class="eyebrow">Begin the Conversation</span>
-    <h2 id="cta-heading">One family. One conversation.</h2>
-    <p>We are a single family office. We do not solicit external clients, but we welcome dialogue with like-minded families, advisors, and partners.</p>
+    <span class="eyebrow" data-i18n="home.cta.eyebrow">Begin the Conversation</span>
+    <h2 id="cta-heading" data-i18n="home.cta.h2">One family. One conversation.</h2>
+    <p data-i18n="home.cta.p">We are a single family office. We do not solicit external clients, but we welcome dialogue with like-minded families, advisors, and partners.</p>
     <div class="btn-group" style="justify-content:center;">
-      <a href="contact.html" class="btn btn-primary">Start a conversation</a>
-      <a href="services.html" class="btn btn-ghost">Our investment focus</a>
+      <a href="contact.html" class="btn btn-primary" data-i18n="home.cta.btn1">Start a conversation</a>
+      <a href="services.html" class="btn btn-ghost" data-i18n="home.cta.btn2">Our investment focus</a>
     </div>
   </div>
 </section>
@@ -223,43 +223,44 @@
             <span class="footer-logo-sub">Management Limited</span>
           </span>
         </div>
-        <p class="footer-tagline">Long-term Capital Allocation<br>Hong Kong Single Family Office<br>Est. 2012</p>
+        <p class="footer-tagline" data-i18n="footer.tagline">Long-term Capital Allocation<br>Hong Kong Single Family Office<br>Est. 2012</p>
       </div>
       <div class="footer-col">
-        <span class="footer-col-title">Company</span>
+        <span class="footer-col-title" data-i18n="footer.company">Company</span>
         <nav class="footer-links">
-          <a href="index.html">Home</a>
-          <a href="about.html">About Us</a>
-          <a href="promotions.html">Promotions</a>
-          <a href="contact.html">Contact</a>
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="about.html" data-i18n="nav.about">About Us</a>
+          <a href="promotions.html" data-i18n="nav.promotions">Promotions</a>
+          <a href="contact.html" data-i18n="nav.contact">Contact</a>
         </nav>
       </div>
       <div class="footer-col">
-        <span class="footer-col-title">Services</span>
+        <span class="footer-col-title" data-i18n="footer.services">Services</span>
         <nav class="footer-links">
-          <a href="services.html">Family Office Oversight</a>
-          <a href="services.html">Wealth Coordination</a>
-          <a href="services.html">Estate &amp; Legacy</a>
-          <a href="services.html">Business Succession Planning</a>
-          <a href="services.html">Tax Strategy</a>
+          <a href="services.html" data-i18n="home.services.1.h3">Family Office Oversight</a>
+          <a href="services.html" data-i18n="home.services.2.h3">Wealth Coordination</a>
+          <a href="services.html" data-i18n="home.services.3.h3">Estate & Legacy</a>
+          <a href="services.html" data-i18n="home.services.4.h3">Business Succession Planning</a>
+          <a href="services.html" data-i18n="home.services.5.h3">Tax Strategy</a>
         </nav>
       </div>
       <div class="footer-col">
-        <span class="footer-col-title">Contact</span>
+        <span class="footer-col-title" data-i18n="footer.contact">Contact</span>
         <div class="footer-contact-items">
-          <div class="footer-contact-item"><span class="flabel">Location</span><span class="fvalue">Hong Kong SAR</span></div>
-          <div class="footer-contact-item"><span class="flabel">Email</span><span class="fvalue"><a href="mailto:info@mcmwealth.com" style="color:inherit;">info@mcmwealth.com</a></span></div>
-          <div class="footer-contact-item"><span class="flabel">Phone</span><span class="fvalue">+852 XXXX XXXX</span></div>
+          <div class="footer-contact-item"><span class="flabel" data-i18n="footer.location">Location</span><span class="fvalue" data-i18n="footer.location.val">Hong Kong SAR</span></div>
+          <div class="footer-contact-item"><span class="flabel" data-i18n="footer.email">Email</span><span class="fvalue"><a href="mailto:info@mcmwealth.com" style="color:inherit;">info@mcmwealth.com</a></span></div>
+          <div class="footer-contact-item"><span class="flabel" data-i18n="footer.phone">Phone</span><span class="fvalue">+852 XXXX XXXX</span></div>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <p class="copyright">&copy; 2024 MCM Wealth Management Limited. All Rights Reserved.</p>
-      <p class="disclaimer">This website is for informational purposes only and does not constitute financial advice. Past performance is not indicative of future results.</p>
+      <p class="copyright" data-i18n="footer.copyright">&copy; 2024 MCM Wealth Management Limited. All Rights Reserved.</p>
+      <p class="disclaimer" data-i18n="footer.disclaimer">This website is for informational purposes only and does not constitute financial advice. Past performance is not indicative of future results.</p>
     </div>
   </div>
 </footer>
 
+<script src="assets/js/i18n.js"></script>
 <script src="assets/js/main.js" defer></script>
 </body>
 </html>
