@@ -110,6 +110,7 @@ function mcm_fallback_nav( $args ) {
         $class = ( is_front_page() && $label === 'Home' ) ? ' class="current-menu-item"' : '';
         echo '<li' . $class . '><a href="' . esc_url( $url ) . '">' . esc_html( $label ) . '</a></li>';
     }
+    echo '<li><button type="button" class="lang-switch" aria-label="' . esc_attr__( 'Translate this page', 'mcm-wealth-theme' ) . '" onclick="alert(\'' . esc_js( __( 'Language selection coming soon.', 'mcm-wealth-theme' ) ) . '\')"><span class="lang-option is-active">EN</span><span class="lang-option">中</span></button></li>';
     echo '</ul>';
 }
 

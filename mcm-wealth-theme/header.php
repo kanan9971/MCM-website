@@ -78,3 +78,21 @@ class MCM_Nav_Walker extends Walker_Nav_Menu {
     }
 }
 endif;
+
+/**
+ * Append the language-switch button as the final menu item, matching
+ * the static markup used on the Vercel-hosted preview.
+ */
+if ( ! function_exists( 'mcm_append_lang_switch' ) ) :
+function mcm_append_lang_switch( $items, $args ) {
+    if ( empty( $args->theme_location ) || $args->theme_location !== 'primary' ) {
+        return $items;
+    }
+
+    $label   = esc_attr__( 'Translate this page', 'mcm-wealth-theme' );
+    $message = esc_js( __( 'Language selection coming soon.', 'mcm-wealth-theme' ) );
+
+    return $items . '<li><button type="button" class="lang-switch" aria-label="' . $label . '" onclick="alert(\'' . $message . '\')"><span class="lang-option is-active">EN</span><span class="lang-option">中</span></button></li>';
+}
+add_filter( 'wp_nav_menu_items', 'mcm_append_lang_switch', 10, 2 );
+endif;
