@@ -11,7 +11,7 @@
                         <span class="footer-logo-sub">Management Limited</span>
                     </span>
                 </div>
-                <p class="footer-tagline">Preserve · Adapt · Scale<br>Hong Kong Single Family Office<br>Est. 2012</p>
+                <p class="footer-tagline">Long-term Capital Allocation<br>Hong Kong Single Family Office<br>Est. 2012</p>
             </div>
 
             <!-- Col 2: Company -->
@@ -29,10 +29,10 @@
             <div class="footer-col">
                 <span class="footer-col-title">Services</span>
                 <nav class="footer-links" aria-label="Services links">
-                    <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Family Office</a>
+                    <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Family Office Oversight</a>
                     <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Wealth Coordination</a>
                     <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Estate &amp; Legacy</a>
-                    <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Business Succession</a>
+                    <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Business Succession Planning</a>
                     <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Tax Strategy</a>
                 </nav>
             </div>

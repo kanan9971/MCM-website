@@ -53,9 +53,9 @@ if ( isset( $_POST['mcm_contact_submit'] ) ) {
 ═══════════════════════════════════════ -->
 <section class="hero-page" aria-label="Contact hero">
     <div class="container">
-        <span class="eyebrow reveal">Get in Touch</span>
-        <h1 class="reveal reveal-delay-1">Let's talk about<br><em class="accent-gold">your family's future.</em></h1>
-        <p class="reveal reveal-delay-2">We welcome enquiries from families, institutions, and individuals. Every conversation is held in complete confidence.</p>
+        <span class="eyebrow reveal">One Family. One Conversation.</span>
+        <h1 class="reveal reveal-delay-1">Let's talk —<br><em class="accent-gold">family to family.</em></h1>
+        <p class="reveal reveal-delay-2">We are a single family office. We do not solicit external clients, but we welcome dialogue with like-minded families, advisors, and partners. Every conversation is held in complete confidence.</p>
     </div>
 </section>
 

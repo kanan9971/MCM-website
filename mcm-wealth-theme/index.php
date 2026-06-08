@@ -11,7 +11,7 @@
             <div class="hero-home-content">
                 <span class="eyebrow reveal">Hong Kong Single Family Office</span>
                 <h1 class="reveal reveal-delay-1">Wealth Lineage,<br><em class="accent-gold">Our Legacy.</em></h1>
-                <p class="reveal reveal-delay-2">MCM Wealth Management Limited provides holistic wealth coordination services — preserving, adapting, and scaling value across generations for families and institutions in Hong Kong.</p>
+                <p class="reveal reveal-delay-2">MCM is a single family office focused on long-term capital allocation and strategic investments — including private equity, hedge funds, and other alternative assets. We work with external advisors across the fields we invest in.</p>
                 <div class="btn-group reveal reveal-delay-3">
                     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="btn btn-primary">Speak with our team</a>
                     <a href="<?php echo esc_url( home_url( '/about-us/' ) ); ?>" class="btn btn-ghost-dark">Learn our philosophy</a>
@@ -110,26 +110,26 @@
 <section class="section" aria-labelledby="who-we-are-heading">
     <div class="container">
         <div class="section-intro text-center reveal">
-            <span class="eyebrow">Who We Are</span>
-            <h2 id="who-we-are-heading">Built on the principle of integrative wealth management</h2>
-            <p>We create beneficial solutions that preserve, adapt, and scale value across generations — delivering holistic wealth coordination that puts your family at the centre of everything we do.</p>
+            <span class="eyebrow">Who Are We?</span>
+            <h2 id="who-we-are-heading">Our unique approach goes beyond transactions</h2>
+            <p>MCM is a single family office. We focus on long-term capital allocation and strategic investments — including private equity, hedge funds, and other alternative assets — working with external advisors in the fields mentioned. Rooted in integrity and trust, our values guide our family with the same strength as our wealth.</p>
         </div>
 
         <div class="cards-3col">
             <div class="value-card reveal reveal-delay-1">
                 <div class="value-card-badge">1</div>
-                <h3>Client-Centric Care</h3>
-                <p>We listen deeply to every concern. Your family's unique circumstances, goals, and values shape every recommendation we make.</p>
+                <h3>Family-Centric Vision</h3>
+                <p>We strengthen lineage across generations, building structures and strategies that endure beyond any single market cycle or life event.</p>
             </div>
             <div class="value-card reveal reveal-delay-2">
                 <div class="value-card-badge">2</div>
-                <h3>Family-Oriented Vision</h3>
-                <p>We strengthen lineage across generations, building structures and strategies that endure beyond any single market cycle or life event.</p>
+                <h3>Sharing Culture</h3>
+                <p>We build community with other single family offices to share knowledge. We are not intermediaries — we share, we do not provide services.</p>
             </div>
             <div class="value-card reveal reveal-delay-3">
                 <div class="value-card-badge">3</div>
-                <h3>Sharing Culture</h3>
-                <p>We foster collaboration and knowledge exchange, ensuring that wisdom, values, and opportunity pass seamlessly from generation to generation.</p>
+                <h3>Partnership</h3>
+                <p>We partner with external specialists — legal, tax, investment — and bring them together under one framework, ensuring transparency in every decision.</p>
             </div>
         </div>
     </div>
@@ -172,28 +172,28 @@
 
             <!-- Left -->
             <div class="credibility-left reveal">
-                <span class="eyebrow">Our Approach</span>
-                <h2 id="credibility-heading">Stewardship, planning and strategy — at every stage</h2>
+                <span class="eyebrow">Our Credibility</span>
+                <h2 id="credibility-heading">Preserving, growing, and transitioning our family's capital across generations</h2>
                 <div class="credibility-divider"></div>
-                <p>We provide holistic wealth coordination through three interconnected disciplines — protecting what you have built, designing structures for what comes next, and growing opportunity across every generation.</p>
+                <p>We preserve, grow, and transition our family's capital across generations — with long-term discipline and strategic focus.</p>
             </div>
 
             <!-- Right: 3 mini cards -->
             <div class="credibility-cards reveal reveal-delay-2">
                 <div class="cred-card">
                     <span class="tag">Preserve</span>
-                    <h3>Stewardship</h3>
-                    <p>Protecting assets, values, and legacy so that the foundations your family has built remain strong and intact across time.</p>
+                    <h3>Family-Centric Vision</h3>
+                    <p>We strengthen lineage across generations, ensuring our family's wealth and identity endure together.</p>
                 </div>
                 <div class="cred-card">
-                    <span class="tag">Adapt</span>
-                    <h3>Planning</h3>
-                    <p>Designing flexible wealth, tax, and estate structures that evolve with your family's needs and the world around you.</p>
+                    <span class="tag">Share</span>
+                    <h3>Sharing Culture</h3>
+                    <p>We build community with other single family offices to share knowledge — we are not intermediaries, we share.</p>
                 </div>
                 <div class="cred-card">
-                    <span class="tag">Scale</span>
-                    <h3>Strategy</h3>
-                    <p>Growing wealth and unlocking opportunity across generations through disciplined coordination and long-term vision.</p>
+                    <span class="tag">Partner</span>
+                    <h3>Partnership</h3>
+                    <p>We partner with external specialists — legal, tax, investment — bringing them together under one coherent framework.</p>
                 </div>
             </div>
 
@@ -209,42 +209,42 @@
     <div class="container">
         <div class="section-header reveal">
             <div>
-                <span class="eyebrow">What We Do</span>
-                <h2 id="services-heading">Comprehensive wealth coordination services</h2>
+                <span class="eyebrow">Investment Focus</span>
+                <h2 id="services-heading">Where we allocate our capital</h2>
             </div>
-            <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>" class="btn btn-ghost-pale">View all services</a>
+            <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>" class="btn btn-ghost-pale">View investment focus</a>
         </div>
 
         <div class="services-grid">
             <div class="service-card reveal reveal-delay-1">
                 <span class="service-card-number">01</span>
-                <h3>Family Office</h3>
-                <p>Family wealth preservation, lifestyle &amp; governance solutions, multi-generational planning, and philanthropy strategies.</p>
+                <h3>Family Office Oversight</h3>
+                <p>Long-term capital allocation, strategic investments, family wealth preservation, and multi-generational planning.</p>
             </div>
             <div class="service-card reveal reveal-delay-2">
                 <span class="service-card-number">02</span>
                 <h3>Wealth Coordination</h3>
-                <p>Equities, bonds, fixed interest products, commodities, alternative investments, and property — coordinated holistically.</p>
+                <p>Equities, bonds, fixed interest products, commodities, alternative investments (private equity, hedge funds), and property.</p>
             </div>
             <div class="service-card reveal reveal-delay-3">
                 <span class="service-card-number">03</span>
                 <h3>Estate &amp; Legacy</h3>
-                <p>Long-term care planning, asset protection structures, cross-generational wealth transfer, and wishes documentation.</p>
+                <p>Estate and legacy strategies that safeguard assets, minimise risks, and ensure continuity of values across generations.</p>
             </div>
             <div class="service-card reveal reveal-delay-1">
                 <span class="service-card-number">04</span>
-                <h3>Business Succession</h3>
-                <p>Ownership transition planning, leadership succession, business valuation strategy, and next-generation preparation.</p>
+                <h3>Business Succession Planning</h3>
+                <p>Succession plans that protect business value, secure continuity, and prepare the next generation for success.</p>
             </div>
             <div class="service-card reveal reveal-delay-2">
                 <span class="service-card-number">05</span>
                 <h3>Tax Strategy</h3>
-                <p>Tax liability reduction, cross-border planning, efficiency enhancement, and long-term structure optimisation.</p>
+                <p>Optimising our tax arrangements with external cross-border tax advisors, to reduce liabilities and enhance efficiency.</p>
             </div>
             <div class="service-card service-card-bespoke reveal reveal-delay-3">
-                <div class="bespoke-icon" aria-hidden="true">&#43;</div>
-                <h3>Bespoke Solutions</h3>
-                <p>Every family is different. Talk to us about a tailored package for your specific circumstances.</p>
+                <div class="bespoke-icon" aria-hidden="true">&#9670;</div>
+                <h3>One Family. One Conversation.</h3>
+                <p>We do not solicit external clients, but we welcome dialogue with like-minded families, advisors, and partners.</p>
                 <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="btn btn-ghost">Get in touch</a>
             </div>
         </div>
@@ -268,11 +268,11 @@
 
     <div class="cta-band-content reveal">
         <span class="eyebrow">Begin the Conversation</span>
-        <h2 id="cta-heading">Your family's legacy starts with a single conversation</h2>
-        <p>Speak with our team to explore how MCM Wealth can help you preserve, adapt, and scale your family's wealth across generations.</p>
+        <h2 id="cta-heading">One family. One conversation.</h2>
+        <p>We are a single family office. We do not solicit external clients, but we welcome dialogue with like-minded families, advisors, and partners.</p>
         <div class="btn-group" style="justify-content:center;">
-            <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="btn btn-primary">Speak with our team</a>
-            <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>" class="btn btn-ghost">Explore our services</a>
+            <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="btn btn-primary">Start a conversation</a>
+            <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>" class="btn btn-ghost">Our investment focus</a>
         </div>
     </div>
 </section>
