@@ -186,11 +186,25 @@ p { line-height: 1.7; }
 .btn-nav:hover { background: var(--orange-soft); border-color: var(--orange-soft); }
 
 .btn-translate {
-    padding: 10px 18px;
-    font-size: 11px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
     border-radius: 100px;
+    border: 1px solid var(--line);
+    background: transparent;
+    color: var(--text-mid);
     cursor: pointer;
     font-family: inherit;
+    transition: var(--transition);
+}
+.btn-translate:hover {
+    border-color: var(--orange);
+    color: var(--orange-deep);
+    background: var(--orange-pale);
 }
 
 .btn-group { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
