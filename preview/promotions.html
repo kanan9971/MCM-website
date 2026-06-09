@@ -140,6 +140,50 @@
   </div>
 </section>
 
+<!-- NEWSLETTER -->
+<section class="newsletter-section" aria-labelledby="newsletter-heading">
+  <div class="container">
+    <div class="newsletter-inner">
+
+      <div class="newsletter-left reveal">
+        <span class="eyebrow">Stay Informed</span>
+        <h2 id="newsletter-heading">Exclusive insights,<br><em>delivered to your family.</em></h2>
+        <p>Join our private newsletter and be the first to hear about new packages, market intelligence, and wealth strategies — curated exclusively for single family offices and like-minded families.</p>
+        <ul class="newsletter-perks">
+          <li>Early access to new promotions &amp; bundled packages</li>
+          <li>Quarterly market &amp; investment insights</li>
+          <li>Estate, tax, and succession planning updates</li>
+          <li>Invitations to private family office briefings</li>
+        </ul>
+      </div>
+
+      <div class="newsletter-form-wrap reveal reveal-delay-2">
+        <h3>Subscribe to our newsletter</h3>
+        <p>No spam. Unsubscribe at any time. Strictly confidential.</p>
+
+        <form class="newsletter-form" id="nl-form" novalidate>
+          <div class="nl-field">
+            <label for="nl-name">Full Name</label>
+            <input type="text" id="nl-name" name="name" placeholder="Your full name" autocomplete="name">
+          </div>
+          <div class="nl-field">
+            <label for="nl-email">Email Address</label>
+            <input type="email" id="nl-email" name="email" placeholder="your@email.com" autocomplete="email" required>
+          </div>
+          <button type="submit" class="nl-submit">Subscribe — It's Free</button>
+          <p class="nl-privacy">By subscribing you agree to receive occasional communications from MCM Wealth Management Limited. We will never share your details with third parties.</p>
+        </form>
+
+        <div class="nl-success" id="nl-success">
+          <div class="nl-tick">&#10003;</div>
+          <p>You're on the list. Welcome to the MCM circle.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- FOOTER -->
 <footer class="site-footer" role="contentinfo">
   <div class="container">
@@ -158,5 +202,17 @@
 
 <script src="assets/js/i18n.js"></script>
 <script src="assets/js/main.js" defer></script>
+<script>
+document.getElementById('nl-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  var email = document.getElementById('nl-email').value.trim();
+  if (!email || !email.includes('@')) {
+    document.getElementById('nl-email').focus();
+    return;
+  }
+  this.style.display = 'none';
+  document.getElementById('nl-success').style.display = 'block';
+});
+</script>
 </body>
 </html>

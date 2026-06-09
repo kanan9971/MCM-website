@@ -140,4 +140,64 @@ get_header();
     </div>
 </section>
 
+<!-- ═══════════════════════════════════════
+     NEWSLETTER
+═══════════════════════════════════════ -->
+<section class="newsletter-section" aria-labelledby="newsletter-heading">
+    <div class="container">
+        <div class="newsletter-inner">
+
+            <div class="newsletter-left reveal">
+                <span class="eyebrow">Stay Informed</span>
+                <h2 id="newsletter-heading">Exclusive insights,<br><em>delivered to your family.</em></h2>
+                <p>Join our private newsletter and be the first to hear about new packages, market intelligence, and wealth strategies — curated exclusively for single family offices and like-minded families.</p>
+                <ul class="newsletter-perks">
+                    <li>Early access to new promotions &amp; bundled packages</li>
+                    <li>Quarterly market &amp; investment insights</li>
+                    <li>Estate, tax, and succession planning updates</li>
+                    <li>Invitations to private family office briefings</li>
+                </ul>
+            </div>
+
+            <div class="newsletter-form-wrap reveal reveal-delay-2">
+                <h3>Subscribe to our newsletter</h3>
+                <p>No spam. Unsubscribe at any time. Strictly confidential.</p>
+
+                <?php
+                $nl_success = false;
+                if ( isset($_POST['nl_nonce']) && wp_verify_nonce($_POST['nl_nonce'], 'mcm_newsletter') ) {
+                    $nl_email = sanitize_email($_POST['nl_email'] ?? '');
+                    $nl_name  = sanitize_text_field($_POST['nl_name'] ?? '');
+                    if ( is_email($nl_email) ) {
+                        $nl_success = true;
+                    }
+                }
+                ?>
+
+                <?php if ( $nl_success ) : ?>
+                <div class="nl-success" style="display:block;">
+                    <div class="nl-tick">&#10003;</div>
+                    <p>You're on the list. Welcome to the MCM circle.</p>
+                </div>
+                <?php else : ?>
+                <form class="newsletter-form" method="post" id="nl-form">
+                    <?php wp_nonce_field('mcm_newsletter', 'nl_nonce'); ?>
+                    <div class="nl-field">
+                        <label for="nl-name">Full Name</label>
+                        <input type="text" id="nl-name" name="nl_name" placeholder="Your full name" autocomplete="name">
+                    </div>
+                    <div class="nl-field">
+                        <label for="nl-email">Email Address</label>
+                        <input type="email" id="nl-email" name="nl_email" placeholder="your@email.com" autocomplete="email" required>
+                    </div>
+                    <button type="submit" class="nl-submit">Subscribe — It's Free</button>
+                    <p class="nl-privacy">By subscribing you agree to receive occasional communications from MCM Wealth Management Limited. We will never share your details with third parties.</p>
+                </form>
+                <?php endif; ?>
+            </div>
+
+        </div>
+    </div>
+</section>
+
 <?php get_footer(); ?>
