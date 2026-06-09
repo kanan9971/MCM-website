@@ -89,29 +89,11 @@
   }
 
   /* ── Back to Top ── */
-  function initBackToTop() {
-    var btn = document.querySelector('.back-to-top');
-    if (!btn) return;
-    function updateBtn() {
-      if (window.scrollY > 300) {
-        btn.classList.add('visible');
-      } else {
-        btn.classList.remove('visible');
-      }
-    }
-    window.addEventListener('scroll', updateBtn, { passive: true });
-    btn.addEventListener('click', function () {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-    updateBtn();
-  }
-
   /* ── Init ── */
   document.addEventListener('DOMContentLoaded', function () {
     initReveal();
     initStickyHeader();
     initMobileNav();
     initContactForm();
-    initBackToTop();
   });
 })();
