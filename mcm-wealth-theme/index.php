@@ -20,68 +20,7 @@
 
             <!-- Right: Visual Card -->
             <div class="hero-visual-card reveal reveal-delay-2">
-                <svg class="hero-skyline" viewBox="0 0 380 200" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hong Kong skyline illustration">
-                    <!-- Sky gradient -->
-                    <defs>
-                        <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-                            <stop offset="0%" stop-color="#2A1F14"/>
-                            <stop offset="100%" stop-color="#4F3825"/>
-                        </linearGradient>
-                        <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
-                            <stop offset="0%" stop-color="#2D2018"/>
-                            <stop offset="100%" stop-color="#1A1208"/>
-                        </linearGradient>
-                    </defs>
-                    <rect width="380" height="200" fill="url(#sky)"/>
-                    <!-- Stars / city glow -->
-                    <circle cx="60"  cy="30" r="1" fill="rgba(253,244,236,0.5)"/>
-                    <circle cx="120" cy="20" r="1" fill="rgba(253,244,236,0.4)"/>
-                    <circle cx="200" cy="15" r="1.5" fill="rgba(253,244,236,0.5)"/>
-                    <circle cx="310" cy="25" r="1" fill="rgba(253,244,236,0.35)"/>
-                    <circle cx="350" cy="18" r="1" fill="rgba(253,244,236,0.45)"/>
-                    <!-- Buildings — back layer (muted) -->
-                    <rect x="10"  y="80"  width="28" height="90" fill="#2A1E13" opacity=".8"/>
-                    <rect x="40"  y="65"  width="20" height="105" fill="#2A1E13" opacity=".8"/>
-                    <rect x="62"  y="75"  width="35" height="95" fill="#2A1E13" opacity=".85"/>
-                    <rect x="100" y="55"  width="18" height="115" fill="#2A1E13" opacity=".8"/>
-                    <rect x="290" y="70"  width="30" height="100" fill="#2A1E13" opacity=".8"/>
-                    <rect x="330" y="60"  width="22" height="110" fill="#2A1E13" opacity=".75"/>
-                    <rect x="355" y="80"  width="25" height="90" fill="#2A1E13" opacity=".7"/>
-                    <!-- Buildings — mid layer -->
-                    <rect x="120" y="60"  width="30" height="110" fill="#3A2918"/>
-                    <rect x="152" y="40"  width="22" height="130" fill="#3A2918"/>
-                    <!-- IFC-like tall tower -->
-                    <rect x="176" y="20"  width="18" height="150" fill="#3D2C1E"/>
-                    <rect x="180" y="16"  width="10" height="10" fill="#4A3420"/>
-                    <rect x="184" y="10"  width="2"  height="10" fill="#D4691E" opacity=".6"/>
-                    <!-- More mid buildings -->
-                    <rect x="196" y="50"  width="28" height="120" fill="#3A2918"/>
-                    <rect x="226" y="65"  width="20" height="105" fill="#3A2918"/>
-                    <rect x="248" y="45"  width="24" height="125" fill="#3D2C1E"/>
-                    <rect x="274" y="70"  width="16" height="100" fill="#3A2918"/>
-                    <!-- Building windows (lit) -->
-                    <rect x="128" y="70"  width="4" height="3" fill="#C9963A" opacity=".4"/>
-                    <rect x="135" y="70"  width="4" height="3" fill="#C9963A" opacity=".3"/>
-                    <rect x="128" y="80"  width="4" height="3" fill="#FDF4EC" opacity=".25"/>
-                    <rect x="128" y="90"  width="4" height="3" fill="#FDF4EC" opacity=".2"/>
-                    <rect x="135" y="85"  width="4" height="3" fill="#C9963A" opacity=".35"/>
-                    <rect x="199" y="58"  width="5" height="3" fill="#FDF4EC" opacity=".2"/>
-                    <rect x="207" y="58"  width="5" height="3" fill="#C9963A" opacity=".35"/>
-                    <rect x="199" y="68"  width="5" height="3" fill="#FDF4EC" opacity=".15"/>
-                    <rect x="250" y="55"  width="5" height="3" fill="#FDF4EC" opacity=".2"/>
-                    <rect x="258" y="55"  width="5" height="3" fill="#C9963A" opacity=".3"/>
-                    <rect x="180" y="30"  width="3" height="2" fill="#FDF4EC" opacity=".3"/>
-                    <rect x="180" y="40"  width="3" height="2" fill="#FDF4EC" opacity=".25"/>
-                    <rect x="180" y="50"  width="3" height="2" fill="#D4691E" opacity=".5"/>
-                    <!-- Water / reflection -->
-                    <rect x="0"   y="168" width="380" height="32" fill="url(#water)"/>
-                    <!-- Reflection glow -->
-                    <rect x="178" y="170" width="4" height="18" fill="#D4691E" opacity=".15"/>
-                    <rect x="130" y="172" width="10" height="14" fill="#C9963A" opacity=".1"/>
-                    <rect x="200" y="171" width="8"  height="12" fill="#FDF4EC" opacity=".07"/>
-                    <!-- Horizon line -->
-                    <rect x="0" y="167" width="380" height="1.5" fill="rgba(253,244,236,0.08)"/>
-                </svg>
+                <img class="hero-skyline" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/mcm_wealth_consultation.png" alt="MCM advisor meeting with a family client, reviewing a wealth management plan together" style="object-fit:cover; height:240px; border-radius:8px;">
 
                 <div class="hero-info-strip">
                     <div class="hero-info-item">
@@ -93,7 +32,7 @@
                         <span class="label">Single Family Office</span>
                     </div>
                     <div class="hero-info-item">
-                        <span class="value" style="font-size:13px;line-height:1.4;">Preserve<br>Adapt · Scale</span>
+                        <span class="value" style="font-size:13px;line-height:1.4;">Long-term Capital<br>Allocation</span>
                         <span class="label">Our Philosophy</span>
                     </div>
                 </div>
@@ -130,6 +69,36 @@
                 <div class="value-card-badge">3</div>
                 <h3>Partnership</h3>
                 <p>We partner with external specialists — legal, tax, investment — and bring them together under one framework, ensuring transparency in every decision.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     SECTION 2b: IN PRACTICE PHOTO STRIP
+═══════════════════════════════════════ -->
+<section class="section--alt photo-strip" aria-label="Our Practice in Action">
+    <div class="container">
+        <div class="section-intro text-center reveal" style="margin-bottom:40px;">
+            <span class="eyebrow">In Practice</span>
+            <h2>How we work with families</h2>
+            <p>From portfolio analytics to estate planning, our team brings precision and care to every conversation.</p>
+        </div>
+        <div class="photo-bento reveal reveal-delay-1">
+            <div class="photo-bento-main">
+                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/mcm_portfolio_analytics.png" alt="MCM advisors reviewing portfolio performance and tax-efficient growth on a large analytics screen">
+                <div class="photo-caption">Portfolio Analytics &amp; Performance Review</div>
+            </div>
+            <div class="photo-bento-side">
+                <div class="photo-bento-item reveal reveal-delay-2">
+                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/mcm_market_trends.png" alt="MCM advisors analysing market trends with Hong Kong skyline in the background">
+                    <div class="photo-caption">Market Trend Analysis</div>
+                </div>
+                <div class="photo-bento-item reveal reveal-delay-3">
+                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/mcm_advisor_client.png" alt="MCM advisor presenting a retirement and asset allocation plan to clients">
+                    <div class="photo-caption">Retirement &amp; Allocation Planning</div>
+                </div>
             </div>
         </div>
     </div>
@@ -176,6 +145,9 @@
                 <h2 id="credibility-heading">Preserving, growing, and transitioning our family's capital across generations</h2>
                 <div class="credibility-divider"></div>
                 <p>We preserve, grow, and transition our family's capital across generations — with long-term discipline and strategic focus.</p>
+                <div class="cred-photo-wrap reveal reveal-delay-1">
+                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/mcm_market_trends.png" alt="MCM senior advisors reviewing market data against the Hong Kong skyline" class="cred-photo">
+                </div>
             </div>
 
             <!-- Right: 3 mini cards -->
