@@ -175,18 +175,21 @@
   }
 
   /* ── Back to Top ── */
-  var btn = document.querySelector('.back-to-top');
-  if (btn) {
-    window.addEventListener('scroll', function () {
-      if (window.scrollY > 400) {
+  document.addEventListener('DOMContentLoaded', function () {
+    var btn = document.querySelector('.back-to-top');
+    if (!btn) return;
+    function updateBtn() {
+      if (window.scrollY > 300) {
         btn.classList.add('visible');
       } else {
         btn.classList.remove('visible');
       }
-    }, { passive: true });
+    }
+    window.addEventListener('scroll', updateBtn, { passive: true });
     btn.addEventListener('click', function () {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
-  }
+    updateBtn();
+  });
 
 })();
