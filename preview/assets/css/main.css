@@ -1205,7 +1205,73 @@ p { line-height: 1.7; }
 .footer-bottom .disclaimer { font-size: 11px; color: rgba(253,244,236,0.38); max-width: 500px; text-align: right; line-height: 1.5; }
 
 /* ─────────────────────────────────────────
-   20. Responsive
+   20. Video Feature
+───────────────────────────────────────── */
+.video-feature { background: var(--bg-page); }
+
+.video-wrap {
+    position:      relative;
+    max-width:     840px;
+    margin:        0 auto;
+    aspect-ratio:  16 / 9;
+    border-radius: var(--radius);
+    overflow:      hidden;
+    background:    linear-gradient(140deg, #1C1208 0%, #3A2515 55%, #5C3A20 100%);
+    box-shadow:    var(--shadow-hover);
+    cursor:        pointer;
+}
+
+/* subtle grain texture overlay */
+.video-wrap::before {
+    content:    '';
+    position:   absolute;
+    inset:      0;
+    background: radial-gradient(ellipse at 60% 40%, rgba(196,100,26,0.18) 0%, transparent 65%),
+                linear-gradient(to bottom, transparent 45%, rgba(28,18,8,0.65));
+    z-index:    1;
+}
+
+.video-play-btn {
+    position:  absolute;
+    top:       50%;
+    left:      50%;
+    transform: translate(-50%, -50%);
+    width:     80px;
+    height:    80px;
+    color:     rgba(253,244,236,0.88);
+    z-index:   2;
+    transition: color var(--transition), transform var(--transition);
+}
+
+.video-wrap:hover .video-play-btn {
+    color:     var(--gold);
+    transform: translate(-50%, -50%) scale(1.12);
+}
+
+.video-caption {
+    position: absolute;
+    bottom:   28px;
+    left:     32px;
+    z-index:  2;
+}
+.video-caption .eyebrow {
+    color:       var(--gold);
+    font-size:   11px;
+    letter-spacing: 0.12em;
+    display:     block;
+    margin-bottom: 4px;
+}
+.video-caption p {
+    font-family: var(--font-heading);
+    font-style:  italic;
+    font-size:   20px;
+    color:       var(--text-on-dark);
+    margin:      0;
+    line-height: 1.3;
+}
+
+/* ─────────────────────────────────────────
+   21. Responsive
 ───────────────────────────────────────── */
 @media (max-width: 1024px) {
     .service-full-card { grid-template-columns: 1fr; gap: 24px; padding: 32px; }
