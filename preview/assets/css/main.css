@@ -8,8 +8,8 @@
 :root {
     --bg-page:            #FFFCF8;
     --bg-alt:             #FFF7ED;
-    --bg-dark:            #3D2C1E;
-    --bg-dark-mid:        #4F3825;
+    --bg-dark:            #A3642F;
+    --bg-dark-mid:        #B8784A;
     --orange:             #D4691E;
     --orange-hover:       #E07A30;
     --orange-deep:        #B85516;
@@ -87,6 +87,9 @@ p { line-height: 1.7; }
     display:        block;
     margin-bottom:  14px;
 }
+.section--dark .eyebrow,
+.hero-home .eyebrow,
+.hero-page--dark .eyebrow { color: rgba(253,244,236,0.80); }
 
 .accent-gold {
     font-style: italic;
