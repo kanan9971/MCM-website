@@ -1152,7 +1152,34 @@ p { line-height: 1.7; }
 .nl-success p { color: var(--text-on-dark); font-size: 16px; margin: 0; }
 
 /* ─────────────────────────────────────────
-   19b. Footer
+   19b. Back to Top
+───────────────────────────────────────── */
+.back-to-top {
+    position:      fixed;
+    bottom:        32px;
+    right:         32px;
+    width:         44px;
+    height:        44px;
+    border-radius: 50%;
+    background:    var(--bg-dark);
+    border:        1px solid rgba(253,244,236,0.18);
+    color:         var(--text-on-dark);
+    display:       flex;
+    align-items:   center;
+    justify-content: center;
+    cursor:        pointer;
+    opacity:       0;
+    transform:     translateY(12px);
+    transition:    opacity 0.25s ease, transform 0.25s ease, background 0.2s ease;
+    z-index:       900;
+    box-shadow:    0 4px 16px rgba(28,18,8,0.22);
+}
+.back-to-top.visible { opacity: 1; transform: translateY(0); }
+.back-to-top:hover   { background: var(--orange); }
+.back-to-top svg     { width: 18px; height: 18px; display: block; }
+
+/* ─────────────────────────────────────────
+   19c. Footer
 ───────────────────────────────────────── */
 .site-footer {
     background:   var(--bg-dark);

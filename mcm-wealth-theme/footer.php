@@ -72,6 +72,12 @@
     </div>
 </footer>
 
+<button class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <polyline points="3,12 9,6 15,12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+</button>
+
 <?php wp_footer(); ?>
 </body>
 </html>
